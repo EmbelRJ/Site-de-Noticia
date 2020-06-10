@@ -21,7 +21,6 @@
                     <td><?= h($newsType->modified) ?></td>
                     <td><?= h($newsType->name) ?></td>
                     <td class="actions">
-                        <?= $this->Html->link(__('Edit'), ['action' => 'edit', $newsType->id]) ?>
                         <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $newsType->id], ['confirm' => __('Are you sure you want to delete # {0}?', $newsType->id)]) ?>
                     </td>
                 </tr>
